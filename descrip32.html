@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Untitled Document</title>
+<style>
+.responsive {
+  width: 100%;
+  height: 50%;
+}
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	font-family: sans-serif;
+}
+
+.navbar a:hover {
+  background: black;
+  color: yellow;
+}
+	.navbar a.right
+	{
+		float: right;
+		border-radius: 25px%;
+		background-color: black;
+		color: yellow;
+		border-color: darkkhaki;;
+		font-size: 17px;
+	   
+	}
+.navbar a.right:hover
+	{
+		border-bottom-color: black;
+		background-color: yellow;
+		color: black;
+		
+	}
+	.navbar  button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color:black;
+  color:yellow;
+  font-size: 17px;
+  cursor: pointer;
+
+	border-color: darkkhaki;
+}
+
+.navbar  button:hover {
+  background-color:yellow;
+	color: black;
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+
+/* footer start */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+	display: inline;/* Should be removed. Only for demonstration */
+}
+	.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 90px;
+		display: inline;/* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+	display: block;
+}
+	.row
+	{
+		display: inline;
+		position: relative;
+	}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}	
+	/* footer end */
+	/* footer with icons */
+	@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background: #322f30;
+    -webkit-font-smoothing: antialiased;
+}
+	
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+ .footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+	align-content: flex-end;
+	
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+	/* footer with icons ends*/
+	/* login start*/
+* {box-sizing: border-box;}
+.navbar .login-container {
+  float: right;
+	
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width:120px;
+}
+
+.navbar .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color:black;
+  color:yellow;
+  font-size: 17px;
+  cursor: pointer;
+
+	border-color: darkkhaki;
+}
+
+.navbar .login-container button:hover {
+  background-color:yellow;
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .login-container {
+    float: none;
+  }
+  .navbar a, .navbar input[type=text], .navbar .login-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+	/* login ends*/
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+	
+	   .striped-border {
+        border: 1px dashed goldenrod;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+		   
+    }
+	.color1
+	{
+		background-image: url(a3.jpg);
+	}
+	
+	.hover1 img:hover{
+		
+  border: 1px solid #777;
+
+	}     /* image gallary start*/
+.navbar a.col
+	{
+		color: white;
+	}
+	.navbar a.col:hover
+	{
+		color: yellow;
+	}
+	
+	
+	
+	
+	 /* Button row start*/
+	/* Style the top nav buttons start */
+.btn2 {
+  border: none;
+  outline: none;
+  padding: 15px 32px;
+  background-color: goldenrod;
+  cursor: pointer;
+  font-size: 17px;
+	  color: black;
+
+  text-align: center;
+  text-decoration: none;
+ 
+  
+  margin: 4px 2px;
+ 
+  font-family: sans-serif;
+  
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn2:hover {
+  background-color: black;
+  color: yellow;
+  border: 3px solid yellow;
+}
+	/* Button row ends*/
+	
+	* {
+  box-sizing: border-box;
+}
+
+.row1 {
+  display: flex;
+	padding: 0px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column1 {
+  flex: 33.33%;
+  padding: 10px;
+	height: 50%;
+}
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: inline-block;
+}
+
+	
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: goldenrod;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+  height: 50%;
+	width: 100%;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2px 3px;
+}
+	.text1 img
+	{
+		float:right;
+	}
+	/* Style the top nav buttons ends */
+	/* Style the image on top buttons start */
+	
+
+	
+	
+	
+	
+	/* Style the image on top buttons ends */
+	.button {
+  background-color: black; /* Green */
+  border: none;
+  color: goldenrod;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+		border-radius: 20px;
+		
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+	
+.navbar a.col
+	{
+		color: yellow;
+	}
+.navbar a.col:hover
+	{
+		color: white;
+	}	
+	
+	
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container2 {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container2 img {vertical-align: middle;}
+
+.container2 .content2 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+container1	.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+	
+#next {
+  width: 6%;
+  height: 8%;
+  background: url(img_navsprites.gif) -47px 0;
+	color: goldenrod;
+}
+		   .striped-border {
+        border: 1px dashed goldenrod;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+		   
+    }
+	.color
+	{
+		background-image: url(a2.jpg);
+	}
+</style>
+</head>
+
+<body>
+
+
+<div  class="striped-border color" style="height: 15%;text-align: left">
+	<a href="designshop.html"><img id="next" src="back1.png" width="2" height="3"></a><h1 style="float: right;padding-right: 40%;color: gold">DRIVE FORCE</h1></div>	
+
+	
+	
+	<div style="width: 100%;height: 100%;background-color: goldenrod;padding-left: 15px;border: 2px solid goldenyellow">
+	
+	<div style="width: 100%;height: 2px;background-color: goldenrod">
+	<button style="border: black;color: goldenrod;background-color: goldenrod"> jhhtyy</button></div>
+	<div style="width: 30%;background-color: black;height: 100%;float: left">
+	<img src="des156.jpg" style="width: 100%;background-color: black;height: 40%;float: left">
+		
+	</div>	
+	<div style="width: 70%;color: white;height: 80%;float: right;padding-left: 15px;font-style: normal">
+		<p style="font-family: sans-serif;padding-left: 50px;padding-right: 50px;text-align: justify">Coastal is the perfect style for those who want to bring the beach and ocean into their daily lives. It incorporates color schemes of white, blue, green, and orange. Accessories include framed ocean reefs, sea shells, wood elements, and casual furniture to create a relaxing atmosphere.<br><br>
+		Modern design is a sleek style that highlights simplicity. Decorators utilize white, gray, and black as main color schemes. Designs are clean and non-cluttered. Straight and bold lines are preferred. Natural accessory elements and materials are utilized, such as wood frames, metal decor, and furniture.<br><br>
+			Modern Glam elegantly merges contemporary and modern design. Upholstered tufted chairs and ottomans adorn these spaces with luxury feeling fabrics, like velvet. Metallic furniture and accessory pieces are commonly used and paired with bright or neutral color schemes.Soft touches are encouraged, such as white roses in a classic vase. Other features like chandeliers, large mirrors, ruffled materials, and jeweled objects add sophisticated and classy touches.<br><br>
+			Contemporary is a softer variation of modern design. It is often confused with modern because it also features a clean appearance with straight lines. It allows for bold, soft, and neutral colors. Contemporary is different from modern design because its style is always changing. It focuses on designs and trends of the present; what defines contemporary design today may not define it in the future.<br><br>
+			Modern design is a sleek style that highlights simplicity. Decorators utilize white, gray, and black as main color schemes. Designs are clean and non-cluttered. Straight and bold lines are preferred. Natural accessory elements and materials are utilized, such as wood frames, metal decor, and furniture.<br><br>
+			
+		</p>
+		<div style="width: 100%;height: 2px;background-color: goldenrod">
+	<button style="border: black;color: goldenrod;background-color: goldenrod"> jhhtyy</button></div>
+	</div>	
+	</div><br><br><br><br><br><br><br><br>	<br><br><br><br>	<br><br><br><br>	<br><br><br><br><br><br><br><br>	
+	<section><br><br><br><br><br><br><br><br>
+		
+	
+		<center><h1><p style="font-family: serif;color: whitesmoke">DRIVE FORCE THEME</p></h1></center>
+		<article>
+		<div class="row1">
+  <div class="column1">  
+   <div class="container1" style="width:100%;height:600px;">
+  <img src="des121.jpg" alt="Avatar" class="image" style="float:left;width:100%;height:50%;object-fit:cover;">
+   <div class="text-block">
+    <h4 style="color: goldenrod"></h4>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+    <div class="container1"  style="width:100%;height:600px;">
+  <img src="des122.jpg" alt="Avatar" class="image" style="float:left;width:100%;height:50%;object-fit:cover;" >
+ <div class="text-block">
+    <h4 style="color: goldenrod"></h4>
+  </div>
+</div>
+  </div>
+  <div class="column1">
+   <div class="container1"  style="width:100%;height:600px;">
+  <img src="des123.jpg" alt="Avatar" class="image"style="float:left;width:100%;height:50%;object-fit:cover;">
+  <div class="text-block">
+    <h4 style="color: goldenrod"></h4>
+  </div>
+</div>
+  </div><br>
+		  <div class="column1">
+   <div class="container1" style="width:100%;height:600px;">
+  <img src="des145.jpg" alt="Avatar" class="image" style="float:left;width:100%;height:50%;object-fit:cover;">
+  <div class="text-block">
+    <h4 style="color: goldenrod"></h4>
+  </div>
+</div>
+  </div>
+
+</div>
+	<div style="width: 100%;height: 2px;background-color: goldenrod">
+	<button style="border: black;color: goldenrod;background-color: goldenrod"> jhhtyy</button></div>	
+	<a href="payment.html"><center><img src="book-now.svg" style="width: 15%;height: 15%;"></center></a>
+	<div style="width: 100%;height: 2px;background-color: goldenrod">
+	<button style="border: black;color: goldenrod;background-color: goldenrod"> jhhtyy</button></div>
+			<br><br><br>
+		</article>
+		
+		<!--<article>
+		
+		  <div class="container2" style="width:100%;height:600px;"><br><br>
+			
+		      <img src="are.jpg"style="float:left;width:25%;height:50%;object-fit:cover;padding: 8px;padding-left: 20px;">
+			  <img src="des2.jpg" style="float:left;width:25%;height:50%;object-fit:cover;padding: 8px;">
+			  <img src="g5.jpg" style="float:left;width:25%;height:50%;object-fit:cover;padding: 8px;">
+			  <img src="des4.jpg" style="float:left;width:25%;height:50%;object-fit:cover;padding: 8px;">
+			  <img src="des4.jpg" style="float:left;width:25%;height:50%;object-fit:cover;padding: 8px;padding-left: 20px;">
+			</div>
+		</article>-->
+	
+				
+		</section>	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+</body>
+</html>

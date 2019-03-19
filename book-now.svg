@@ -1,0 +1,33 @@
+<?xml version="1.0"?><svg width="808.779" height="333.517" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Book Now</title>
+ <defs>
+  <linearGradient xlink:href="#linearGradient3113-4" y2="0.862508" x2="0.463935" y1="0.225019" x1="0.479399" id="linearGradient4575"/>
+  <linearGradient id="linearGradient3113-4">
+   <stop offset="0" stop-color="#ffde54" id="stop3115-9"/>
+   <stop offset="1" stop-opacity="0" stop-color="#ffde54" id="stop3117-7"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linearGradient3177" y2="0.8807" x2="0.562671" y1="0.439001" x1="0.551379" id="linearGradient4577"/>
+  <linearGradient id="linearGradient3177">
+   <stop offset="0" stop-color="#ff6600" id="stop3179"/>
+   <stop offset="1" stop-opacity="0" stop-color="#ff6600" id="stop3181"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3037-1">
+   <stop offset="0" stop-color="#ffffff" id="stop3039-49"/>
+   <stop offset="1" stop-opacity="0" stop-color="#ffffff" id="stop3041-1"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linearGradient3037-1" y2="1.43899" x2="0.272728" y1="-0.572735" x1="0.272728" id="linearGradient5748"/>
+ </defs>
+ <metadata id="metadata4">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <g transform="matrix(3.02852 0 0 3.02852 -1924.4 -1901.03)" id="g4569">
+    <path d="m-831.572021,-755.734009l215.499023,0c8.427002,0 15.210999,6.783997 15.210999,15.210999l0,70.988037c0,8.427979 -6.783997,15.211975 -15.210999,15.211975l-215.499023,0c-8.427002,0 -15.211975,-6.783997 -15.211975,-15.211975l0,-70.988037c0,-8.427002 6.784973,-15.210999 15.211975,-15.210999z" transform="translate(43.9657 -21.9107) scale(-1)" fill="#e9a30f" id="rect3151"/>
+    <path d="m-829.989014,-752.763977l212.333008,0c6.494995,0 11.723999,5.229004 11.723999,11.723999l0,54.710999c0,6.494995 -5.229004,11.723999 -11.723999,11.723999l-212.333008,0c-6.494995,0 -11.723999,-5.229004 -11.723999,-11.723999l0,-54.710999c0,-6.494995 5.229004,-11.723999 11.723999,-11.723999z" transform="translate(43.9657 -21.9107) scale(-1)" fill="url(#linearGradient4575)" id="rect3155"/>
+    <path d="m871.778015,634.557983c-72.085999,1.317017 -144.213989,-0.992004 -216.281006,1.156006c-8.578979,4.94104 -5.489014,16.450989 -5.5,24.562988c0.382019,21.518005 -1.75,43.362 1.312012,64.656006c5.740967,7.705994 16.839966,3.945007 25.083984,4.679016c68.169006,-0.86499 136.425964,0.737976 204.541016,-0.77301c8.210999,-3.761963 6.843994,-14.460999 6.093994,-21.875c-0.600037,-22.541992 2.016968,-45.474976 -1.5,-67.75c-2.944031,-4.440979 -8.901001,-4.856018 -13.75,-4.656006z" fill="url(#linearGradient4577)" opacity="0.33" id="path3093"/>
+    <path d="m872.567017,636.312988c-70.644043,1.02301 -141.411011,-0.144958 -211.988037,0.609985c-9.949951,-0.677979 -12.97998,13.916016 -11.138,23.494019c0.080017,3.629028 0.087036,7.267029 0.093018,10.90802c21.023987,12.179993 47.47699,22.310974 76.385986,21.015015c44.447998,-1.992004 114.755005,-18.686035 159.301025,-30.359009c-0.174988,-5.89502 -0.458984,-11.774048 -0.958984,-17.621033c-2.122009,-5.325012 -7.16803,-7.875 -11.695007,-8.046997z" fill="url(#linearGradient5748)" id="path3159"/>
+   </g>
+  </g>
+  <text xml:space="preserve" y="121.4679" x="127.302" transform="matrix(6.26262 0 0 6.78293 -398.022 -603.668)" text-anchor="middle" stroke-width="0" stroke="#000000" fill="#000000" font-weight="bold" font-size="17" font-family="Arial" id="svg_1">BOOK   NOW</text>
+ </g>
+</svg>

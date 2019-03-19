@@ -1,0 +1,140 @@
+<?php
+ session_start();
+?>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid black;width: 36%;height: 60%;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+	width: 70%;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+	
+}
+
+.container {
+  padding: 16px;
+  width: 94%;
+	 background-color: black;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:goldenrod">
+<center>
+<h2>Login Form</h2>
+
+<form method="get" novalidate>
+  <div class="imgcontainer">
+    <img src="loginicon2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+  <p>  <input type="text" placeholder="Enter Username" name="uname" id="uname" required><span id="err1" style="color:red;"></span></p>
+
+    <label for="psw"><b>Password</b></label>
+  <p>  <input type="password" placeholder="Enter Password" name="psw" id="psw" required><span id="err2" style="color:red;"></span></p>
+        
+    <input type="submit" value="Login" id="logbtn" name="logbtn"> <a href="home1.html" style="text-decoration: none;color: goldenrod">Cancel</a>
+ <center>  <p style="color:white;">Not a Member??<a href=sangee.php style="text-decoration: none;color: goldenrod">SIGNUP</a> </p></center>
+	  
+	  <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
+  </div>
+
+ 
+</form>
+	</center>
+<script>       
+       var btns=document.getElementById('logbtn');
+       function checking()
+       {
+           var checkes=1;
+           var names=document.getElementById('uname');
+           if(names.checkValidity)
+	{
+	document.getElementById("err1").innerHTML=names.validationMessage;
+if(names.validationMessage.toString().length!=0)
+    checkes=0;
+	}
+           var company=document.getElementById('psw');
+            if(company.checkValidity)
+	{
+	document.getElementById("err2").innerHTML=company.validationMessage;
+if(company.validationMessage.toString().length!=0)
+    checkes=0;
+	}
+          
+	if(checkes==0)
+        {
+            return false;
+        }
+           else{
+               return true;
+           }
+           
+       };
+       btns.onclick=function(e){ 
+           var checkes=checking();   
+                               if(checkes==false) 
+                                  e.preventDefault();
+                               
+                               };
+       </script>
+	
+	
+		
+</body>
+</html>

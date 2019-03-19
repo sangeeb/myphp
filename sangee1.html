@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("reg.jpg");
+
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 8px;
+  background-color: black;
+	width: 80%;
+	
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],input[type=tel] {
+  width: 100%;
+  padding: 9px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: goldenrod;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+	
+.errors{
+        font-size: 12px;
+        color: red;
+        font-style: italic;
+    }	
+</style>
+</head>
+<body>
+
+
+<div class="bg-img">
+  <form  class="container" method="get" novalidate>
+ <center>  <h1 style="color: goldenrod">REGISTER</h1></center> 
+	  
+	<label for="name"><b style="color: goldenrod">Name</b></label>
+ <p>  <input type="text" placeholder="Enter Name" name="name" id="name" pattern="[a-zA-Z]*$" required><span class="errors" id="e1"> </span></p> 
+
+ 
+
+	 <label for="pno"><b style="color: goldenrod">Phone Number</b></label>
+	  <p>  <input type="tel" placeholder="Enter phone number" name="pno" id="pno"  pattern="[0-9]{10}" required><span class="errors" id="e3"> </span></p> 
+	  
+	   <label for="address"><b style="color: goldenrod">Address</b></label>
+	  <p>  <input type="text" placeholder="Enter Adress" name="addr" id="addr"  required><span class="errors" id="e4"> </span></p> 
+     
+    <label for="psw"><b style="color: goldenrod">Password</b></label>
+	  <p> <input type="password" placeholder="Enter Password" name="psw" id="psw" required><span class="errors" id="e5"> </span></p>
+
+    <input type="submit" class="btn" value="REGISTER" id="btnSend" >
+	 <center> <p style="color:white;">Already a Member??<a href=login.php style="text-decoration: none;color: goldenrod">LOGIN</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="home1.html" style="text-decoration: none;color: goldenrod">Cancel</a> </p></center>
+  </form>
+		 <script>       
+       var btns=document.getElementById('btnSend');
+       function checking()
+       {
+           var checkes=1;
+           
+		   var names=document.getElementById('name');
+           if(names.checkValidity)
+	{
+	document.getElementById("e1").innerHTML=names.validationMessage;
+if(names.validationMessage.toString().length!=0)
+    checkes=0;
+	}
+         
+   
+           var phone=document.getElementById('pno');
+            if(phone.checkValidity)
+	{
+	document.getElementById("e3").innerHTML=phone.validationMessage;
+if(phone.validationMessage.toString().length!=0)
+    checkes=0;
+	}
+           var city=document.getElementById('psw');
+            if(city.checkValidity)
+	{
+	document.getElementById("e5").innerHTML=city.validationMessage;
+if(city.validationMessage.toString().length!=0)
+    checkes=0;
+	}
+		   
+		   
+	 var ad=document.getElementById('addr');
+            if(ad.checkValidity)
+	{
+	document.getElementById("e4").innerHTML=ad.validationMessage;
+if(ad.validationMessage.toString().length!=0)
+    checkes=0;
+	}	   
+
+	if(checkes==0)
+        {
+            return false;
+        }
+           else{
+               return true;
+           }
+           
+       };
+       btns.onclick=function(e){ 
+           var checkes=checking();   
+                               if(checkes==false) 
+                                  e.preventDefault();
+                               
+                               };
+       </script>
+
+</div>
+
+
+
+
+</body>
+</html>
